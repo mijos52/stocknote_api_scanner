@@ -10,11 +10,11 @@ headers = {
 
 # Get todays date and convert it into string
 # day = (str(date.today()))
-day = "2021-10-01"
+day = "2022-05-01"
 
 
 r = requests.get('https://api.stocknote.com/intraday/candleData', params={
-  'symbolName': ['WIPRO','INFY','CAMS'],  'fromDate': '%s 09:15:00'%day , 'interval': '5' ,
+  'symbolName': ['WIPRO'],  'fromDate': '%s 09:15:00'%day , 'interval': '1' ,
 }, headers = headers)
 
 pprint (r.json())
